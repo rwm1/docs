@@ -43,6 +43,7 @@ help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  check-xrefs       to validate the Xrefs in the source content."
 	@echo "  clean             to clean the build directory of any leftover artifacts from the previous build."
+	@echo "  html              to generate HTML documentation."
 	@echo "  install           to install the Antora command-line tools."
 	@echo "  pdf               to generate the PDF version of the manual."
 	@echo "  search-index      to generate the site search index (Lunr)."
@@ -67,6 +68,18 @@ clean:
 	@echo "Cleaning up any artifacts from the previous build."
 	@-rm -rf $(BUILDDIR)/*
 	@echo 
+
+#
+# Generate HTML documentation from the configured content sources 
+# 
+html: 
+	@echo "Generate HTML documentation."
+	@echo
+	antora generate \
+		--cache-dir ./cache/ \
+		--pull \
+		--stacktrace \
+		site.yml
 
 #
 # Installs the Antora command-line tools locally, so that users only have to do as little as possible
