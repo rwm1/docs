@@ -4,14 +4,13 @@
 # Core configuration 
 # These can be overridden by variables passed on the command-line or environment variables.
 #
+APPVERSION    = 10.0.19
+BASEDIR       = $(shell pwd)
+BRANCH        = $(shell git rev-parse --verify HEAD)
 BUILDDIR      = build
 FONTSDIR      = fonts
-STYLESDIR     = resources/themes
 STYLE         = owncloud
-BASEDIR       = $(shell pwd)
-APPVERSION    = 10.0.19
-BRANCH        = $(shell git rev-parse --verify HEAD)
-UI_BUNDLE	  = https://github.com/owncloud/docs-ui/releases/download/1.1.0/ui-bundle.zip
+STYLESDIR     = resources/themes
 
 .PHONY: help clean pdf
 
