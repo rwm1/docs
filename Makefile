@@ -57,7 +57,6 @@ check-xrefs:
 		--generator=./generator/xref-validator \
 		--pull \
 		--stacktrace \
-		--ui-bundle-url $(UI_BUNDLE) \
 		site.yml
 
 #
