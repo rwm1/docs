@@ -41,10 +41,11 @@ endef
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  check-xrefs    to validate the Xrefs in the source content."
-	@echo "  clean          to clean the build directory of any leftover artifacts from the previous build."
-	@echo "  install        to install the Antora command-line tools."
-	@echo "  pdf            to generate the PDF version of the manual."
+	@echo "  check-xrefs       to validate the Xrefs in the source content."
+	@echo "  clean             to clean the build directory of any leftover artifacts from the previous build."
+	@echo "  install           to install the Antora command-line tools."
+	@echo "  pdf               to generate the PDF version of the manual."
+	@echo "  search-index      to generate the site search index (Lunr)."
 
 #
 # Use a limited Antora build to check the Xrefs through the Playbook's source files
@@ -94,6 +95,20 @@ pdf: clean
 	@echo
 	@echo "Finished building the PDF manuals."
 	@echo "The PDF copy of the manuals have been generated in the build directory: $(BUILDDIR)/."
+
+#
+# Generate the site search index
+# Currently only Lunr is supported.
+# 
+search-index: 
+	@echo "Generate the site search index."
+	@echo
+	antora generate \
+		--cache-dir ./cache/ \
+		--generator=./generate-site.js \
+		--pull \
+		--stacktrace \
+		site.yml
 
 check_all_files_prose: 
 	@echo "Checking quality of the prose in all files"
