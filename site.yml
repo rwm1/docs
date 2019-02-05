@@ -43,3 +43,5 @@ asciidoc:
     # For more information, see https://asciidoctor.org/docs/user-manual/#auto-generated-ids
     idprefix: ''
     idseparator: '-'
+    # Global URLs
+    marketplace-url: https://marketplace.owncloud.com
