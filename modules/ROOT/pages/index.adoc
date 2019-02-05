@@ -27,12 +27,12 @@ https://doc.owncloud.com/#current-stable-server-release.
 
 == Previous Stable Release (version 10.0.10)
 
-* xref:10.0.10@administration_manual:index.adoc[Administration Manual]
-  ({docs-base-url}/server/10.0.10/ownCloud_Server_Administration_Manual.pdf[Download PDF])
-* xref:10.0.10@developer_manual:index.adoc[Developer Manual]
-  ({docs-base-url}/server/10.0.10/ownCloudDeveloperManual.pdf[Download PDF])
-* xref:10.0.10@user_manual:index.adoc[User Manual]
-  ({docs-base-url}/server/10.0.10/ownCloud_User_Manual.pdf[Download PDF])
+* xref:10.0@administration_manual:index.adoc[Administration Manual]
+  ({docs-base-url}/server/10.0/ownCloud_Server_Administration_Manual.pdf[Download PDF])
+* xref:10.0@developer_manual:index.adoc[Developer Manual]
+  ({docs-base-url}/server/10.0/ownCloudDeveloperManual.pdf[Download PDF])
+* xref:10.0@user_manual:index.adoc[User Manual]
+  ({docs-base-url}/server/10.0/ownCloud_User_Manual.pdf[Download PDF])
 
 == ownCloud X Appliance
 
