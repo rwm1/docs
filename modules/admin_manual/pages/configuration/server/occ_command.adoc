@@ -866,6 +866,8 @@ user or within a specified filesystem path on the designated storage. It
 then compares them with the values in the database. The command also
 offers an option to repair incorrect checksum values (`-r, --repair`).
 
+CAUTION: The repair action does not repair corrupt files. Use only after verifying file integrity.
+
 CAUTION: Executing this command might take some time depending on the file count.
 
 Below is sample output that you can expect to see when using the
